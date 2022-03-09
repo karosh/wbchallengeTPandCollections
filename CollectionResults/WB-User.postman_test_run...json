@@ -1,0 +1,364 @@
+{
+	"id": "acb051b9-8b55-42e1-8fa6-5e0de354e39e",
+	"name": "WB-User",
+	"timestamp": "2022-03-08T19:19:18.599Z",
+	"collection_id": "0-a031554a-fe5f-4f5e-8264-24e8a593aaa9",
+	"folder_id": "0-ed50dbd9-3ea3-4ac1-a2e0-094c84d628e9",
+	"environment_id": "6fc2c9a7-dd4a-4ef6-9034-63136d820303",
+	"totalPass": 14,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "51276e55-2a18-4b70-a5d9-df09f24928e8",
+			"name": "AppStatus",
+			"url": "http://localhost:3000/",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"App message check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"App message check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"App message check": true
+				}
+			]
+		},
+		{
+			"id": "c7f91ccb-fe6f-414b-8480-40737b89464a",
+			"name": "adminToken",
+			"url": "http://localhost:3000/signin",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "71100081-c87f-41ad-9a60-69de173b08a1",
+			"name": "createUser",
+			"url": "http://localhost:3000/users",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8e47fb0a-eab1-473a-a83d-7faa9a63277e",
+			"name": "userToken",
+			"url": "http://localhost:3000/signin",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e14a085e-f6c7-4642-b240-d2f62c29254e",
+			"name": "getUserDetails",
+			"url": "http://localhost:3000/users/01FXNFHE18FJ2A9X03NCDHRW4Z",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User check": true
+				}
+			]
+		},
+		{
+			"id": "1bea1d48-9caf-4c0a-90f4-74d580099e0b",
+			"name": "updateUserDetails(password)",
+			"url": "http://localhost:3000/users/01FXNFHE18FJ2A9X03NCDHRW4Z",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Update Message": true,
+				"Check New email": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Update Message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check New email": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Update Message": true,
+					"Check New email": false
+				}
+			]
+		},
+		{
+			"id": "819a6710-15f2-4c81-8a27-ffe87c39bd5f",
+			"name": "getUserDetails",
+			"url": "http://localhost:3000/users/01FXNFHE18FJ2A9X03NCDHRW4Z",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User check": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User check": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User check": false
+				}
+			]
+		},
+		{
+			"id": "bdc5d009-e05f-40ab-8b5a-3e32039b3148",
+			"name": "deleteUser",
+			"url": "http://localhost:3000/users/01FXNFHE18FJ2A9X03NCDHRW4Z",
+			"time": 14,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is un-success (401)": true,
+				"Message check": true
+			},
+			"testPassFailCounts": {
+				"Status code is un-success (401)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is un-success (401)": true,
+					"Message check": true
+				}
+			]
+		},
+		{
+			"id": "5a3dc957-224d-4425-8927-9e871706b012",
+			"name": "(after)adminToken",
+			"url": "http://localhost:3000/signin",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d5196dd3-a7d1-4d77-9378-f734731de91d",
+			"name": "(after)deleteUser",
+			"url": "http://localhost:3000/users/01FXNFHE18FJ2A9X03NCDHRW4Z",
+			"time": 6,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is success": true
+			},
+			"testPassFailCounts": {
+				"Status code is success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is success": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 98,
+	"collection": {
+		"requests": [
+			{
+				"id": "51276e55-2a18-4b70-a5d9-df09f24928e8",
+				"method": "GET"
+			},
+			{
+				"id": "c7f91ccb-fe6f-414b-8480-40737b89464a",
+				"method": "POST"
+			},
+			{
+				"id": "71100081-c87f-41ad-9a60-69de173b08a1",
+				"method": "POST"
+			},
+			{
+				"id": "8e47fb0a-eab1-473a-a83d-7faa9a63277e",
+				"method": "POST"
+			},
+			{
+				"id": "e14a085e-f6c7-4642-b240-d2f62c29254e",
+				"method": "GET"
+			},
+			{
+				"id": "1bea1d48-9caf-4c0a-90f4-74d580099e0b",
+				"method": "PUT"
+			},
+			{
+				"id": "819a6710-15f2-4c81-8a27-ffe87c39bd5f",
+				"method": "GET"
+			},
+			{
+				"id": "bdc5d009-e05f-40ab-8b5a-3e32039b3148",
+				"method": "DELETE"
+			},
+			{
+				"id": "5a3dc957-224d-4425-8927-9e871706b012",
+				"method": "POST"
+			},
+			{
+				"id": "d5196dd3-a7d1-4d77-9378-f734731de91d",
+				"method": "DELETE"
+			}
+		]
+	}
+}

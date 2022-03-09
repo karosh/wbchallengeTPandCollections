@@ -1,0 +1,148 @@
+{
+	"id": "df1124c2-b584-4356-b02c-2804327f8f0c",
+	"name": "WB-User",
+	"timestamp": "2022-03-08T19:05:32.024Z",
+	"collection_id": "0-a031554a-fe5f-4f5e-8264-24e8a593aaa9",
+	"folder_id": "0-94e5fe84-9b1a-477e-8a36-58de9061e14c",
+	"environment_id": "6fc2c9a7-dd4a-4ef6-9034-63136d820303",
+	"totalPass": 4,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "c7e4641f-b880-4fa5-aec1-73b2a13c558c",
+			"name": "AppStatus",
+			"url": "http://localhost:3000/",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"App message check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"App message check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"App message check": true
+				}
+			]
+		},
+		{
+			"id": "115e2c21-1a6b-4c82-b0f2-d0a1beee0b73",
+			"name": "adminToken",
+			"url": "http://localhost:3000/signin",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9926a914-436a-41ca-a992-7477c2436bb8",
+			"name": "getUsers",
+			"url": "http://localhost:3000/users",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ac3d12e4-c50c-4f2f-a559-0ae383e8a765",
+			"name": "createUser",
+			"url": "http://localhost:3000/users",
+			"time": 10,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 35,
+	"collection": {
+		"requests": [
+			{
+				"id": "c7e4641f-b880-4fa5-aec1-73b2a13c558c",
+				"method": "GET"
+			},
+			{
+				"id": "115e2c21-1a6b-4c82-b0f2-d0a1beee0b73",
+				"method": "POST"
+			},
+			{
+				"id": "9926a914-436a-41ca-a992-7477c2436bb8",
+				"method": "GET"
+			},
+			{
+				"id": "ac3d12e4-c50c-4f2f-a559-0ae383e8a765",
+				"method": "POST"
+			}
+		]
+	}
+}

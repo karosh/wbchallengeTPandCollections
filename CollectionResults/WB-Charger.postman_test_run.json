@@ -1,0 +1,192 @@
+{
+	"id": "543ba469-c14a-4004-b5d6-3250d75950e7",
+	"name": "WB-Charger",
+	"timestamp": "2022-03-07T19:38:42.333Z",
+	"collection_id": "0-556d27c1-7861-4a11-887a-942aa0d26088",
+	"folder_id": "0-124bcf58-9d6e-4edd-87e7-f6b3ea2fad8f",
+	"environment_id": "6fc2c9a7-dd4a-4ef6-9034-63136d820303",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8acb6438-a050-4e3b-986d-e7f66a6d499a",
+			"name": "AppStatus",
+			"url": "http://localhost:3000/",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ffbdc31f-afc4-4cf4-ad4a-65cc06c604e0",
+			"name": "adminToken",
+			"url": "http://localhost:3000/signin",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c723dc85-9a95-49ad-b7b6-25489862d263",
+			"name": "getChargers",
+			"url": "http://localhost:3000/chargers",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6e3aab71-85ad-4bc1-bb32-25710bb55a86",
+			"name": "setChargers",
+			"url": "http://localhost:3000/chargers",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Message check": true
+			},
+			"testPassFailCounts": {
+				"Message check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Message check": true
+				}
+			]
+		},
+		{
+			"id": "794a20eb-a879-465a-9c93-aab1cea1c72b",
+			"name": "getChargersDetails",
+			"url": "http://localhost:3000/chargers/01FXJY87SGSSWEN97BSKKE5Z9T",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check Serial Number": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Serial Number": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check Serial Number": true
+				}
+			]
+		},
+		{
+			"id": "db0f03e4-3db6-4a0f-b9be-0b27b2a3c481",
+			"name": "deleteCharger",
+			"url": "http://localhost:3000/chargers/01FXJY87SGSSWEN97BSKKE5Z9T",
+			"time": 14,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is success": true
+			},
+			"testPassFailCounts": {
+				"Status code is success": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is success": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 65,
+	"collection": {
+		"requests": [
+			{
+				"id": "8acb6438-a050-4e3b-986d-e7f66a6d499a",
+				"method": "GET"
+			},
+			{
+				"id": "ffbdc31f-afc4-4cf4-ad4a-65cc06c604e0",
+				"method": "POST"
+			},
+			{
+				"id": "c723dc85-9a95-49ad-b7b6-25489862d263",
+				"method": "GET"
+			},
+			{
+				"id": "6e3aab71-85ad-4bc1-bb32-25710bb55a86",
+				"method": "POST"
+			},
+			{
+				"id": "794a20eb-a879-465a-9c93-aab1cea1c72b",
+				"method": "GET"
+			},
+			{
+				"id": "db0f03e4-3db6-4a0f-b9be-0b27b2a3c481",
+				"method": "DELETE"
+			}
+		]
+	}
+}
